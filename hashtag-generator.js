@@ -16,4 +16,4 @@ function generateHashtag(str) {
 	}
 }
 
-export default generateHashtag;
+module.exports =  generateHashtag;

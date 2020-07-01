@@ -17,6 +17,7 @@ const findMissing = function (list) {
 				if (i === 0) {
 					commonDifference = list[i + 1] - list[i];
 					arrayKeep = [commonDifference, list[i]];
+					// array to keep track of commonDifference and current element
 				} else if (list[i + 1] - list[i] < commonDifference) {
 					if (positive) {
 						commonDifference = list[i + 1] - list[i];
@@ -45,4 +46,4 @@ const findMissing = function (list) {
 	return false;
 };
 
-export default findMissing;
+module.exports = findMissing;
