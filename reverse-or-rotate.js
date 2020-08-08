@@ -25,5 +25,3 @@ function revrot(str, sz) {
 		return reversedOrRotatedList.join("");
 	}
 }
-
-module.exports = revrot;

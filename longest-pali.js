@@ -14,5 +14,3 @@ const longestPali = (str) => {
 	}
 	return list;
 };
-
-export default longestPali;

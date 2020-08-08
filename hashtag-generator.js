@@ -15,5 +15,3 @@ function generateHashtag(str) {
 		return resultWithHash;
 	}
 }
-
-module.exports =  generateHashtag;

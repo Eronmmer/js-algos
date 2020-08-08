@@ -33,5 +33,3 @@ const findMissing = function (list) {
 		}
 	}
 };
-
-module.exports = findMissing;
