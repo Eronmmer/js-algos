@@ -7,6 +7,7 @@ const twoSum = function (nums, target) {
 		let modified = [...arr];
 		modified.splice(i, 1);
 		let second = modified.find((e) => e + arr[i] === target);
-		if (second != undefined) return [nums.indexOf(arr[i]), nums.lastIndexOf(second)];
+		if (second != undefined)
+			return [nums.indexOf(arr[i]), nums.lastIndexOf(second)];
 	}
 };
