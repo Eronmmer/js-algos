@@ -33,6 +33,7 @@ const lengthOfLongestSubstring = (s) => {
 			values.push(s[j++]);
 			ans = Math.max(ans, j - i);
 		} else {
+			values.splice(values.indexOf(s[i]), 1);
 			i++;
 		}
 	}
