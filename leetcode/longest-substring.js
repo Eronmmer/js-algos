@@ -7,35 +7,35 @@
 const lengthOfLongestSubstring = (s) => {
 	let length = s.length;
 	let values = new Set();
-	let ans = 0,
+	let longest = 0,
 		i = 0,
 		j = 0;
 	while (i < length && j < length) {
 		if (!values.has(s[j])) {
 			values.add(s[j++]);
-			ans = Math.max(ans, j - i);
+			longest = Math.max(longest, j - i);
 		} else {
 			values.delete(s[i++]);
 		}
 	}
-	return ans;
+	return longest;
 };
 
 // solution 2
 const lengthOfLongestSubstring = (s) => {
 	let length = s.length;
 	let values = [];
-	let ans = 0,
+	let longest = 0,
 		i = 0,
 		j = 0;
 	while (i < length && j < length) {
 		if (!values.includes(s[j])) {
 			values.push(s[j++]);
-			ans = Math.max(ans, j - i);
+			longest = Math.max(longest, j - i);
 		} else {
 			values.splice(values.indexOf(s[i]), 1);
 			i++;
 		}
 	}
-	return ans;
+	return longest;
 };
