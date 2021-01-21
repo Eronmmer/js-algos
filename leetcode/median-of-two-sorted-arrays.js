@@ -1,6 +1,6 @@
 // Link to challenge: https://leetcode.com/problems/median-of-two-sorted-arrays/
 
-// SOLUTION 1. O((n+m)Log(n+m))
+// SOLUTION 1
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
@@ -14,7 +14,7 @@ var findMedianSortedArrays = function (nums1, nums2) {
 		: sortedArr[midIdx];
 };
 
-// SOLUTION 2. O(log n + m)
+// SOLUTION 2
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
@@ -36,7 +36,7 @@ var findMedianSortedArrays = function (nums1, nums2) {
 			final.push(arr1[i++]);
 		}
 		while (j < arr2.length) {
-			final.push(arr1[j++]);
+			final.push(arr2[j++]);
 		}
 		return final;
 	};
