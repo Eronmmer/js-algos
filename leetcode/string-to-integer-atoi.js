@@ -1,3 +1,9 @@
+// Link to challenge -> https://leetcode.com/problems/string-to-integer-atoi/submissions/
+
+/**
+ * @param {string} s
+ * @return {number}
+ */
 var myAtoi = function (s) {
 	let int = 0,
 		sign = 1;
