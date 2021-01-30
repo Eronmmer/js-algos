@@ -1,4 +1,4 @@
-// Link to challenge -> https://leetcode.com/problems/climbing-stairs/submissions/
+// Link to challenge -> https://leetcode.com/problems/climbing-stairs/
 
 /**
  * @param {number} n
