@@ -9,7 +9,7 @@ var climbStairs = function (n) {
 	let climb = (x, memo) => {
 		if (x < 0) return -1;
 		if (x <= 1) return 1;
-		if (memo[x]) return memo[x];
+		if (memo[x] > 0) return memo[x];
 		memo[x] = climb(x - 1, memo) + climb(x - 2, memo);
 		return memo[x];
 	};
