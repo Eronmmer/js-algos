@@ -22,3 +22,16 @@ var hasCycle = function (head) {
 	}
 	return false;
 };
+
+// constant space solution using Floyd's cycle finding algorithm
+var hasCycle = function (head) {
+	if (!head) return false;
+	let slow = head,
+		fast = head.next;
+	while (slow != fast) {
+		if (fast == null || fast.next == null) return false;
+		slow = slow.next;
+		fast = fast.next.next;
+	}
+	return true;
+};
