@@ -1,4 +1,4 @@
-// Link to code -> https://leetcode.com/problems/majority-element/submissions/
+// Link to challenge -> https://leetcode.com/problems/majority-element/submissions/
 
 /**
  * @param {number[]} nums
